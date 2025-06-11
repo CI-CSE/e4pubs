@@ -2,7 +2,7 @@ class
 	MAPLE_RECURSIVE_ABSOLUTE_2
 
 feature
-	abs (x: INTEGER): INTEGER
+	buggy_abs (x: INTEGER): INTEGER
 		do
 			if x >= 0 then
 				Result := x

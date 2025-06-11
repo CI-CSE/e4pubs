@@ -2,7 +2,7 @@ class
     PRIME_CHECK_8
 feature
 
-	is_prime (a: INTEGER): BOOLEAN
+	buggy_is_prime (a: INTEGER): BOOLEAN
 		require
 			num_is_big_enough: 1 < a
 		local

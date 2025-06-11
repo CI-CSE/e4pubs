@@ -143,7 +143,7 @@ feature
 			not_found: not Result implies across 1 |..| (rear - 1) as i all queue.sequence [i] /= key end
 		end
 
-	search (key: INTEGER): INTEGER
+	buggy_search (key: INTEGER): INTEGER
 		local
 			index: INTEGER
 		do

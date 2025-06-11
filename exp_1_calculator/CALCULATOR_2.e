@@ -2,7 +2,7 @@ class
 	CALCULATOR_2
 
 feature
-	calculate (a_num1, a_num2: INTEGER; a_operator: CHARACTER): INTEGER
+	buggy_calculate (a_num1, a_num2: INTEGER; a_operator: CHARACTER): INTEGER
 		require
 			feasible_operation:
        			(a_operator = '+') or
