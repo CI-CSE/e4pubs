@@ -27,7 +27,7 @@ feature
 					i := i + 1
 				end
 			variant
-				{INTEGER}.max_value - i - if Result then 0 else 1 end
+				mid - i - if Result then 0 else 1 end
 			end
 		ensure
 			if_prime: Result implies across 2 |..| (a // 2) as k all a \\ k /= 0 end
