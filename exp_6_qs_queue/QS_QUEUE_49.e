@@ -12,7 +12,7 @@ feature {NONE}
 			rear := 1
 			exception_is_raised := False
 		ensure
-			exception_not_raise: exception_is_raised = False
+			exception_not_raised: exception_is_raised = False
 			front_is_front: front = 1
 			rear_is_front: rear = 1
 		end

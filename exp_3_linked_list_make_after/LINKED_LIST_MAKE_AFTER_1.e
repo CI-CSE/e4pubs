@@ -13,6 +13,8 @@ feature
 		end
 
 	before, after: BOOLEAN
+	-- Before and after are used to see whether the current position in the linked list
+	-- is before the first element or after the last element.
 
 invariant
 	not_both: not (after and before)

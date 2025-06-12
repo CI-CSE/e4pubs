@@ -11,17 +11,17 @@ feature
 			Result := True
 			from
 				i := 2
-				mid := a // 2
+				mid := a // 2 -- `//` is integer division
 			invariant
 				i_in_range: 1 < i and i <= mid + 1
 				not_missed: 2 < i implies across 2 |..| (i - 1) as k all a \\ k /= 0 end
 				stops_when_found: not Result implies a \\ i = 0
-				stops_early_enogh: not Result implies i <= mid
+				stops_early_enough: not Result implies i <= mid
 
 			until
 				i > mid
 			loop
-				if a \\ i = 0 then
+				if a \\ i = 0 then -- `\\` is the modulo operator
 					Result := False
 				else
 					i := i + 1
